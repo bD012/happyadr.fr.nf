@@ -1,0 +1,50 @@
+<div class="flexItemContainer">
+
+  <div class="flexZZ flexPadding"></div>
+
+  <div class="flexItemContainer table">
+
+    <div class="flexItemContainer tr">
+      <div class="flexItem flexS06 th">DEPARTMENT</div>
+      <div class="flexItem flexS02 th">STATUS</div>
+      <div class="flexItem flexS02 th">DELETE</div>
+      <div class="flexItem flexS02 th">UPDATE</div>
+    </div>
+    
+    <?php 
+      $departments = unserialize($departments);
+      foreach($departments as $department) {
+        extract($department);
+    ?>
+
+    <div id="backoffice-database-row-<?= $index ?>" class="flexItemContainer tr">
+
+      <div class="flexItem flexS06 flexPadding td"><?= $index ?></div>
+
+      <div id="backoffice-database-check-<?= $index ?>" class="flexItem flexS02 flexPadding td">
+        <?php include 'icon.html' ?></icon>
+      </div>
+
+      <div class="flexItem flexS02 flexPadding td">
+        <?php if ($index == '20') { echo '<!--'; } ?>
+        <button id="backoffice-database-button-delete-<?= $index ?>" class="ajax" action="<?= WEBROOT ?>/backoffice/delete-database/one/<?= $index ?>">
+          <icon class="icon-cross">
+        </button>
+        <?php if ($index == '20') { echo '-->'; } ?>
+      </div>
+
+      <div class="flexItem flexS02 flexPadding td"> 
+        <?php if ($index == '20') { echo '<!--'; } ?>
+        <button id="backoffice-database-button-update-<?= $index ?>" class="ajax" action="<?= WEBROOT ?>/backoffice/update-database/one/<?= $index ?>">
+          <icon class="icon-spinner11">
+        </button>
+        <?php if ($index == '20') { echo '-->'; } ?>
+      </div>
+
+    </div>
+
+    <?php } ?>
+
+  </div>
+
+</div>

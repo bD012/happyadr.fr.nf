@@ -1,0 +1,89 @@
+#developer icon {
+  font-size: 30px;
+  color: #AAAAAA;
+  background-color: #CCDDFF;
+  padding: 18px;
+  border-radius: 100%;
+}
+
+#architecture icon {
+  padding-right: 6px;
+}
+
+#architecture .left {
+  color: #555555;
+  padding: 4px;
+  font-weight: bold;
+}
+
+#architecture .right {
+  padding: 4px;
+}
+
+#architecture .offset01 {
+  padding-left: 12px;
+}
+
+#architecture .offset02 {
+  padding-left: 24px;
+}
+
+#architecture .offset03 {
+  padding-left: 36px;
+}
+
+#architecture .icon-folder-open {
+  color: #FFAA00
+}
+
+#architecture .icon-css3 {
+  color: #AAAAFF;
+}
+
+#architecture .icon-html-five2 {
+  color: #FFAA33;
+}
+
+#architecture .icon-embed {
+  color: #CCCC33;
+}
+
+#architecture .icon-file-openoffice {
+  color: #7777BB;
+}
+
+#architecture .icon-libreoffice {
+  color: #CC3333;
+}
+
+#architecture .icon-text-color {
+  color: #55CC55;
+}
+
+#architecture .icon-svg {
+  color: #33AAFF;
+}
+
+@media (min-width:1px) and (max-width:768px) { /* SMALL */
+
+  #architecture {
+    font-size: 12px;
+  }
+
+}
+
+@media (min-width:768px) and (max-width:1200px) { /* MEDIUM */
+
+  #architecture {
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width:1200px) { /* LARGE */
+
+  #architecture {
+    font-size: 18px;
+  }
+
+}

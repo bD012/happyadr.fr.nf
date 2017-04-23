@@ -1,0 +1,14 @@
+#loading {
+  display: none;
+	position: fixed;
+	bottom: 0px;
+  left: 0px;
+  padding: 66px 66px 6px 6px;
+  background: radial-gradient(at bottom left,#000000, #000000, transparent, transparent);
+}
+
+#loading svg {
+  width: 44px;
+  height: 44px;
+  opacity: 1;
+}

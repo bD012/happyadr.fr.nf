@@ -1,0 +1,79 @@
+<section>
+	<div class="flexContainer">
+
+		<div class="flexItem">
+			<h1>Contact</h1>
+		</div>
+
+		<form class="flexItemContainer flexPadding" method="post" action="<?= WEBROOT ?>/contact/contact">
+
+			<?= $token ?>
+
+			<div class="flexItemContainer flexPadding flexRight">
+
+				<!-- Email -->
+				<div class="flexItemContainer link <?= $email_hasfeedback ?>">
+					<label class="link-left flexItem flexPadding flexF2C flexIMiddle" for="email">
+						<icon class="icon-mail3"></icon>
+					</label>
+
+					<label for="email" class="link-middle flexItem flexPadding flexXF">
+						<input id="email" type="email" size="1" name="email" placeholder="Email" autocomplete="off" <?= $email_autofocus ?> value="<?= $email_value ?>">
+					</label>
+
+					<label for="email" class="link-right input-message flexItem flexPadding flexF2C flexIMiddle">
+						<icon class="icon-question"></icon>
+						<div id="email_information" class="input-information"><?= $email_information ?></div>
+					</label>
+
+					<div id="email_feedback" class="flexItem flexPadding input-feedback"><?= $email_feedback ?></div>
+				</div>
+
+
+				<!-- Message -->
+				<div class="flexItemContainer link <?= $message_hasfeedback ?>">
+					<label class="link-left flexItem flexPadding flexF2C flexIMiddle" for="message">
+						<icon class="icon-pencil"></icon>
+					</label>
+
+					<label for="message" class="link-middle flexItem flexPadding flexXF">
+						<textarea id="message" rows="12" name="message" placeholder="Your message"<?= $message_autofocus ?>><?= $message_value ?></textarea>
+					</label>
+
+					<label for="message" class="link-right textarea-message flexItem flexPadding flexF2C flexIMiddle">
+						<icon class="icon-question"></icon>
+						<div id="message_information" class="textarea-information"><?= $message_information ?></div>
+					</label>
+
+					<div id="message_feedback" class="link-right flexItem flexPadding textarea-feedback"><?= $message_feedback ?></div>
+				</div>
+
+
+				<!-- Captcha -->
+<!--				<div class="flexItemContainer link">
+					<label class="link-left flexItemContainer flexF2C flexIMiddle" for="captcha">
+						<div class="flexItem flexPadding">
+							<?= $captcha ?>
+						</div>
+					</label>
+
+					<label class="link-middle flexItem flexPadding flexXF">
+						<input id="captcha" type="integer" size="1" name="captcha" placeholder="Captcha"  autocomplete="off">
+					</label>
+
+					<label for="captcha" class="link-right input-message flexItem flexPadding flexF2C flexIMiddle">
+						<?= $captcha_reload ?>
+					</label>
+				</div>
+-->
+				<div class="flexZZ flexPadding"></div>
+
+				<!-- Submit -->
+				<div class="flexItem flexPadding flexF2C">
+					<button type="submit">Send</button>
+				</div>
+			</div>
+
+		</form>
+	</div>
+</section>

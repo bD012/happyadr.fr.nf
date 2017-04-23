@@ -1,0 +1,49 @@
+#backoffice button {
+  padding: 1vw 4vw 1vw 4vw;
+  font-size: inherit;
+}
+
+.last-update {
+  text-align: left;
+  font-size: 22px;
+}
+
+#backoffice .table {
+  text-align: center;
+  font-size: 2vw;
+  line-height: 3.2vw;
+}
+
+/* table header */
+#backoffice .th {
+  background-color: rgba(0,0,0,0.4);
+  color: #DDDDDD;
+}
+
+/* table data */
+#backoffice .td {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333333;
+}
+
+#backoffice .td,
+#backoffice .th {
+  border-left: 1px solid #333333;
+  border-top: 1px solid #333333;
+}
+
+#backoffice .td:last-child,
+#backoffice .th:last-child {
+  border-right: 1px solid #333333;
+}
+#backoffice .tr:last-child {
+  border-bottom: 1px solid #333333;
+}
+
+
+#backoffice .icon-checkmark {
+  color: #00AA00;
+}
+#backoffice .icon-cross {
+  color: #AA3300;
+}

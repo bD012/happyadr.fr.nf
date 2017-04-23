@@ -1,0 +1,61 @@
+<form class="flexItemContainer ajax" data-ajax="user_view" method="post" action="<?= WEBROOT ?>/user/signin">
+
+	<?= $token ?>
+
+	<div class="flexItemContainer textCenter">
+		<h3 class="flexItem flexPadding flexXF">Sign In To Your Account</h3>
+		<label class="flexItem flexPadding flexF2C" for="user-switch">
+			<icon class="icon-cross"></icon>
+		</label>
+	</div>
+
+	<div class="flexItemContainer flexPadding flexRight">
+
+		<!-- Username -->
+		<div class="flexItemContainer link <?= $username_hasfeedback ?>">
+			<label class="link-left flexItem flexPadding flexF2C flexIMiddle" for="username">
+				<icon class="icon-user"></icon>
+			</label>
+
+			<label class="link-middle flexItem flexPadding flexXF">
+				<input id="username" type="text" size="1" name="username" placeholder="Username" autocomplete="off" <?= $username_autofocus ?> value="<?= $username_value ?>">
+			</label>
+
+			<label for="username" class="link-right input-message flexItem flexPadding flexF2C flexIMiddle">
+				<icon class="icon-question"></icon>
+				<div id="username_information" class="input-information"><?= $username_information ?></div>
+			</label>
+
+			<div id="username_feedback" class="flexItem flexPadding input-feedback"><?= $username_feedback ?></div>
+		</div>
+
+		<!-- Password -->
+		<div class="flexItemContainer link <?= $password_hasfeedback ?>">
+			<label class="link-left flexItem flexPadding flexF2C flexIMiddle" for="password">
+				<icon class="icon-lock"></icon>
+			</label>
+
+			<label class="link-middle flexItem flexPadding flexXF">
+				<input id="password" type="password" size="1" name="password" placeholder="Password"  autocomplete="off"  <?= $password_autofocus ?> value="<?= $password_value ?>">
+			</label>
+
+			<label for="password" class="link-right input-message flexItem flexPadding flexF2C flexIMiddle">
+				<icon class="icon-question"></icon>
+				<div id="password_information" class="input-information"><?= $password_information ?></div>
+			</label>
+
+			<div id="password_feedback" class="flexItem flexPadding input-feedback"><?= $password_feedback ?></div>
+		</div>
+
+
+		<!-- Submit -->
+		<div class="flexItem flexPadding flexF2C">
+			<button type="submit">Connect</button>
+		</div>
+	</div>
+
+	<div class="flexItem flexPadding textRight">
+		<a class="ajax special" data-ajax="user_view" href="<?= WEBROOT ?>/user/register/checked">Register ?</a>
+	</div>
+		
+</form>

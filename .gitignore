@@ -1,0 +1,7 @@
+# {happy}adr Project .gitignore
+
+# Untracked directory:
+/public
+
+ # Untracked files:
+ .vscode

@@ -1,0 +1,239 @@
+/* **************************************************************************************
+**  FLEXBOX
+** *********************************************************************************** */
+
+/* ** Container
+************************************ */
+.flexContainer, .flexC {
+  display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: stretch;
+	overflow: hidden;
+}
+
+/* ** itemContainer
+************************************ */
+.flexItemContainer, .flexIC {
+  display: flex;
+	flex: 0 0 100%;
+	flex-direction: row;
+  flex-wrap: wrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: stretch;
+	word-wrap: break-word;
+}
+
+/* ** item
+************************************ */
+.flexItem, .flexI {
+	flex: 0 0 100%;
+	word-wrap: break-word;
+}
+
+/* ** Padding cf mediaqueries
+************************************ */
+.flexPadding { padding: 12px; }
+
+/* ** Container Direction
+************************************ */
+.flexDirectionRow, .flexDR { flex-direction: row; }
+.flexDirectionRowReverse, .flexDRR { flex-direction: row-reverse; }
+.flexDirectionColumn, .flexDC { flex-direction: column; }
+.flexDirectionColumnReverse, .flexDCR { flex-direction: column-reverse; }
+
+/* ** wrap
+************************************ */
+.flexWrapNowrap, .flexWN {flex-wrap: nowrap; }
+.flexWrapWrap, .flexWW {flex-wrap: wrap; }
+.flexWrapWrapReverse, .flexWR {flex-wrap: wrap-reverse; }
+
+/* ** overflow
+************************************ */
+.flexOverflowVisible, .flexOV {
+	overflow: visible;
+}
+
+.flexOverflowHidden, .flexOH {
+	overflow: hidden;
+}
+
+/* ** Alignment Row, Column
+************************************ */
+.flexLeft { justify-content: flex-start; }
+.flexCenter { justify-content: center; }
+.flexRight { justify-content: flex-end; }
+.flexAround { justify-content: space-around ; }
+.flexBetween { justify-content: space-between ; }
+
+.flexCTop { align-content: flex-start; }
+.flexCMiddle { align-content: center; }
+.flexCBottom { align-content: flex-end; }
+.flexCAround { align-content: space-around; }
+.flexCBetween { align-content: space-between; }
+
+.flexITop {	align-items: flex-start; }
+.flexIMiddle { align-items: center; }
+.flexIBottom { align-items: flex-end; }
+.flexIStretch { align-items: stretch; }
+.flexIBaseline { align-items: baseline; }
+
+/* ** Item's fit to Content
+************************************ */
+.flexFit2Content, .flexF2C { flex: none; }
+
+/* ** Xtra : Fill
+************************************ */
+.flexXtraFill, .flexXF { flex: 1 0 auto;}
+
+/* ** item null line
+************************************ */
+.flexZZ { flex: 0 0 100%; height:0px; }
+
+/* ********************************************************************
+ *  OFFSET
+ * ***************************************************************** */
+.flexOffset12 { margin-left: 100%; }
+.flexOffset11 { margin-left: 91.666666%; }
+.flexOffset10 { margin-left: 83.333333%; }
+.flexOffset09 { margin-left: 75%; }
+.flexOffset08 { margin-left: 66.666666%; }
+.flexOffset07 { margin-left: 58.333333%; }
+.flexOffset06 { margin-left: 50%; }
+.flexOffset05 { margin-left: 41.666666%; }
+.flexOffset04 { margin-left: 33.333333%; }
+.flexOffset03 { margin-left: 25%; }
+.flexOffset02 { margin-left: 16.666666%; }
+.flexOffset01 { margin-left: 8.333333%; }
+
+/* ********************************************************************
+ *  _?_ item per line (3 items => flex-basis : 33.333333%)
+ * ***************************************************************** */
+._01_ { flex: 0 0 100%; }
+._02_ { flex: 0 0 50%; }
+._03_ { flex: 0 0 33.333333%; }
+._04_ { flex: 0 0 25%; }
+._05_ { flex: 0 0 20%; }
+._06_ { flex: 0 0 16.666667%; }
+._07_ { flex: 0 0 14.285714%; }
+._08_ { flex: 0 0 12.5%; }
+._09_ { flex: 0 0 11.111111%; }
+._10_ { flex: 0 0 10%; }
+._11_ { flex: 0 0 9.090909%; }
+._12_ { flex: 0 0 8.333333%; }
+._13_ { flex: 0 0 7.692308%; }
+._14_ { flex: 0 0 7.142857%; }
+._15_ { flex: 0 0 6.666667%; }
+._16_ { flex: 0 0 6.25%; }
+._17_ { flex: 0 0 5.882353%; }
+._18_ { flex: 0 0 5.555556%; }
+._19_ { flex: 0 0 5.263158%; }
+._20_ { flex: 0 0 5%; }
+
+._xx_ { flex: 0 0 100%; } /* clear ._??_ */
+
+/* ********************************************************************
+ *  %
+ * ***************************************************************** */
+._99 { flex: 0 0 99%; }
+._98 { flex: 0 0 98%; }
+._97 { flex: 0 0 97%; }
+._96 { flex: 0 0 96%; }
+._95 { flex: 0 0 95%; }
+._94 { flex: 0 0 94%; }
+._93 { flex: 0 0 93%; }
+._92 { flex: 0 0 92%; }
+._91 { flex: 0 0 91%; }
+._90 { flex: 0 0 90%; }
+._89 { flex: 0 0 89%; }
+._88 { flex: 0 0 88%; }
+._87 { flex: 0 0 87%; }
+._86 { flex: 0 0 86%; }
+._85 { flex: 0 0 85%; }
+._84 { flex: 0 0 84%; }
+._83 { flex: 0 0 83%; }
+._82 { flex: 0 0 82%; }
+._81 { flex: 0 0 81%; }
+._80 { flex: 0 0 80%; }
+._79 { flex: 0 0 79%; }
+._78 { flex: 0 0 78%; }
+._77 { flex: 0 0 77%; }
+._76 { flex: 0 0 76%; }
+._75 { flex: 0 0 75%; }
+._74 { flex: 0 0 74%; }
+._73 { flex: 0 0 73%; }
+._72 { flex: 0 0 72%; }
+._71 { flex: 0 0 71%; }
+._70 { flex: 0 0 70%; }
+._69 { flex: 0 0 69%; }
+._68 { flex: 0 0 68%; }
+._67 { flex: 0 0 67%; }
+._66 { flex: 0 0 66%; }
+._65 { flex: 0 0 65%; }
+._64 { flex: 0 0 64%; }
+._63 { flex: 0 0 63%; }
+._62 { flex: 0 0 62%; }
+._61 { flex: 0 0 61%; }
+._60 { flex: 0 0 60%; }
+._59 { flex: 0 0 59%; }
+._58 { flex: 0 0 58%; }
+._57 { flex: 0 0 57%; }
+._56 { flex: 0 0 56%; }
+._55 { flex: 0 0 55%; }
+._54 { flex: 0 0 54%; }
+._53 { flex: 0 0 53%; }
+._52 { flex: 0 0 52%; }
+._51 { flex: 0 0 51%; }
+._50 { flex: 0 0 50%; }
+._49 { flex: 0 0 49%; }
+._48 { flex: 0 0 48%; }
+._47 { flex: 0 0 47%; }
+._46 { flex: 0 0 46%; }
+._45 { flex: 0 0 45%; }
+._44 { flex: 0 0 44%; }
+._43 { flex: 0 0 43%; }
+._42 { flex: 0 0 42%; }
+._41 { flex: 0 0 41%; }
+._40 { flex: 0 0 40%; }
+._39 { flex: 0 0 39%; }
+._38 { flex: 0 0 38%; }
+._37 { flex: 0 0 37%; }
+._36 { flex: 0 0 36%; }
+._35 { flex: 0 0 35%; }
+._34 { flex: 0 0 34%; }
+._33 { flex: 0 0 33%; }
+._32 { flex: 0 0 32%; }
+._31 { flex: 0 0 31%; }
+._30 { flex: 0 0 30%; }
+._29 { flex: 0 0 29%; }
+._28 { flex: 0 0 28%; }
+._27 { flex: 0 0 27%; }
+._26 { flex: 0 0 26%; }
+._25 { flex: 0 0 25%; }
+._24 { flex: 0 0 24%; }
+._23 { flex: 0 0 23%; }
+._22 { flex: 0 0 22%; }
+._21 { flex: 0 0 21%; }
+._20 { flex: 0 0 20%; }
+._19 { flex: 0 0 19%; }
+._18 { flex: 0 0 18%; }
+._17 { flex: 0 0 17%; }
+._16 { flex: 0 0 16%; }
+._15 { flex: 0 0 15%; }
+._14 { flex: 0 0 14%; }
+._13 { flex: 0 0 13%; }
+._12 { flex: 0 0 12%; }
+._11 { flex: 0 0 11%; }
+._10 { flex: 0 0 10%; }
+._09 { flex: 0 0 9%; }
+._08 { flex: 0 0 8%; }
+._07 { flex: 0 0 7%; }
+._06 { flex: 0 0 6%; }
+._05 { flex: 0 0 5%; }
+._04 { flex: 0 0 4%; }
+._03 { flex: 0 0 3%; }
+._02 { flex: 0 0 2%; }
+._01 { flex: 0 0 1%; }

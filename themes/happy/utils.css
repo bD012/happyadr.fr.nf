@@ -1,0 +1,25 @@
+.separator {
+  height: 66px;
+}
+.relative {
+  position: relative;
+}
+.textLeft {
+  text-align: left;
+}
+.textCenter {
+  text-align: center;
+}
+.textRight {
+  text-align: right;
+}
+
+
+.disabled, .disbled input {
+  background-color: rgba(0,0,0, 0.1);
+}
+
+.transform3D {
+  perspective: 660px;
+  transform-style: preserve-3d;
+}

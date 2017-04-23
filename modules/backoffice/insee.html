@@ -1,0 +1,50 @@
+<div class="flexItemContainer">
+
+  <div class="flexItem flexS08 text-left">
+    <p class="last-update"><?= $date ?></p>
+  </div>
+
+  <div class="flexZZ flexPadding"></div>
+
+  <div class="flexItemContainer table">
+
+    <div class="flexItemContainer tr">
+      <div class="flexItem flexS06 th">DEPARTMENT</div>
+      <div class="flexItem flexS02 th">STATUS</div>
+      <div class="flexItem flexS02 th">DELETE</div>
+      <div class="flexItem flexS02 th">UPDATE</div>
+    </div>
+    
+    <?php 
+      $departments = unserialize($departments);
+      foreach($departments as $department) {
+        extract($department);
+    ?>
+
+    <div id="backoffice-insee-row-<?= $index ?>" class="flexItemContainer tr">
+
+      <div class="flexItem flexS06 flexPadding td"><?= $index ?></div>
+
+      <div id="backoffice-insee-check-<?= $index ?>" class="flexItem flexS02 flexPadding td">
+        <?php include 'icon.html' ?></icon>
+      </div>
+
+      <div class="flexItem flexS02 flexPadding td"> 
+        <button id="backoffice-insee-button-delete-<?= $index ?>" class="ajax" action="<?= WEBROOT ?>/backoffice/delete-insee/one/<?= $index ?>">
+          <icon class="icon-cross">
+        </button>
+      </div>
+
+      <div class="flexItem flexS02 flexPadding td"> 
+        <button id="backoffice-insee-button-update-<?= $index ?>" class="ajax" action="<?= WEBROOT ?>/backoffice/update-insee/one/<?= $index ?>">
+          <icon class="icon-spinner11">
+        </button>
+      </div>
+
+    </div>
+
+    <?php } ?>
+
+  </div>
+
+</div>

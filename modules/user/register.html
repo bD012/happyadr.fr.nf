@@ -1,0 +1,121 @@
+<form class="flexItemContainer ajax" data-ajax="user_view" method="post" action="<?= WEBROOT ?>/user/register">
+
+	<?= $token ?>
+
+	<div class="flexItemContainer textCenter">
+		<h3 class="flexItem flexPadding flexXF">Register</h3>
+		<label class="flexItem flexPadding flexF2C" for="user-switch">
+			<icon class="icon-cross"></icon>
+		</label>
+	</div>
+
+
+
+	<div class="flexItemContainer flexPadding flexRight">
+
+		<!-- Username -->
+		<div class="flexItemContainer link <?= $username_hasfeedback ?>">
+			<label class="link-left flexItem flexPadding flexF2C flexIMiddle" for="username">
+				<icon class="icon-user"></icon>
+			</label>
+
+			<div class="link-middle flexItem flexPadding flexXF <?= $username_disabled ?>">
+				<input id="username" type="text" size="1" name="username" placeholder="Username" autocomplete="off" <?= $username_autofocus ?> <?= $username_disabled ?> value="<?= $username_value ?>">
+			</div>
+
+			<label for="username" class="link-right input-message flexItem flexPadding flexF2C flexIMiddle">
+				<icon class="icon-question"></icon>
+				<div id="username_information" class="input-information"><?= $username_information ?></div>
+			</label>
+
+			<div id="username_feedback" class="flexItem flexPadding input-feedback"><?= $username_feedback ?></div>
+		</div>
+
+		<!-- Email -->
+		<div class="flexItemContainer link <?= $email_hasfeedback ?>">
+			<label class="link-left flexItem flexPadding flexF2C flexIMiddle" for="email">
+				<icon class="icon-mail3"></icon>
+			</label>
+
+			<label for="email" class="link-middle flexItem flexPadding flexXF">
+				<input id="email" type="email" size="1" name="email" placeholder="Email" autocomplete="off" <?= $email_autofocus ?> value="<?= $email_value ?>">
+			</label>
+
+			<label for="email" class="link-right input-message flexItem flexPadding flexF2C flexIMiddle">
+				<icon class="icon-question"></icon>
+				<div id="email_information" class="input-information"><?= $email_information ?></div>
+			</label>
+
+			<div id="email_feedback" class="flexItem flexPadding input-feedback"><?= $email_feedback ?></div>
+		</div>
+
+		<!-- Password -->
+		<div class="flexItemContainer link <?= $password_hasfeedback ?>">
+			<label class="link-left flexItem flexPadding flexF2C flexIMiddle" for="password">
+				<icon class="icon-lock"></icon>
+			</label>
+
+			<label for="password" class="link-middle flexItem flexPadding flexXF">
+				<input id="password" type="password" size="1" name="password" placeholder="Password"  autocomplete="off" <?= $password_autofocus ?> value="<?= $password_value ?>">
+			</label>
+
+			<label for="password" class="link-right input-message flexItem flexPadding flexF2C flexIMiddle">
+				<icon class="icon-question"></icon>
+				<div id="password_information" class="input-information"><?= $password_information ?></div>
+			</label>
+
+			<div id="password_feedback" class="flexItem flexPadding input-feedback"><?= $password_feedback ?></div>
+		</div>
+
+
+		<!-- Confirm Password -->
+		<div class="flexItemContainer link <?= $confirm_hasfeedback ?>">
+			<label class="link-left flexItem flexPadding flexF2C flexIMiddle" for="confirm">
+				<icon class="icon-key"></icon>
+			</label>
+
+			<label for="confirm" class="link-middle flexItem flexPadding flexXF">
+				<input id="confirm" type="password" size="1" name="confirm" placeholder="Confirm Password"  autocomplete="off" <?= $confirm_autofocus ?> value="<?= $confirm_value ?>">
+			</label>
+
+			<label for="confirm" class="link-right input-message flexItem flexPadding flexF2C flexIMiddle">
+				<icon class="icon-question"></icon>
+				<div id="confirm_information" class="input-information"><?= $confirm_information ?></div>
+			</label>
+
+			<div id="confirm_feedback" class="flexItem flexPadding input-feedback"><?= $confirm_feedback ?></div>
+		</div>
+
+
+		<!-- Captcha -->
+<!--		<div class="flexItemContainer link">
+			<label class="link-left flexItemContainer flexF2C flexIMiddle" for="captcha">
+				<div class="flexItem flexPadding">
+					<?= $captcha ?>
+				</div>
+			</label>
+
+			<label for="captcha" class="link-middle flexItemContainer flexIMiddle flexPadding flexXF">
+				<input class="flexItem" id="captcha" type="integer" size="1" name="captcha" placeholder="Captcha"  autocomplete="off">
+			</label>
+
+			<label for="captcha" class="link-right input-message flexItem flexPadding flexF2C flexIMiddle">
+				<?= $captcha_reload ?>
+			</label>
+		</div>
+-->
+		<div class="flexZZ flexPadding"></div>
+
+		<!-- Submit -->
+		<div class="flexItem flexPadding flexF2C">
+			<button  type="submit">Send</button>
+		</div>
+	</div>
+
+
+
+	<div class="flexItem flexPadding textRight">
+		<a class="ajax special" data-ajax="user_view" href="<?= WEBROOT ?>/user/signin/checked">Return</a>
+	</div>
+		
+</form>

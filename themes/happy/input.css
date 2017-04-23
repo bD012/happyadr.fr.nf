@@ -1,0 +1,100 @@
+.link > * {
+  background-color: #FFFFFF;
+  color: #AAAAAA;
+}
+
+[class^="link-"] input ,
+[class^="link-"] textarea {
+  outline: none;
+  background-color: transparent;
+}
+
+[class^="link-"] {
+  border-top: 1px solid #AAAAAA;
+  border-bottom: 1px solid #AAAAAA;
+}
+
+.link-left {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-left: 1px solid #AAAAAA;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.link-right {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #AAAAAA;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.input-message,
+.textarea-message {
+  position: relative;
+  transition: all 1s;
+}
+.input-message:hover,
+.textarea-message:hover {
+  color: #333333;
+}
+
+
+
+
+.input-information,
+.textarea-information {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 55px;
+  font-size: 16px;
+  background-color: #333333;
+  color: #AAAAAA;
+  border-top: 2px solid #AAAAAA;
+  padding: 12px;
+  transform-origin: bottom;
+  transform: rotateX(-90deg);
+  transition: all 0.5s ease-in;
+}
+
+.input-message,
+.textarea-message {
+  cursor: help;
+}
+
+.input-message:hover .input-information,
+.textarea-message:hover .textarea-information {
+  transform: rotateX(0);
+}
+
+.input-feedback,
+.textarea-feedback {
+  height: 0;
+  background-color: transparent;
+  font-size: 0px;
+  color: transparent;
+  transition: all 2s;
+  border: 1px solid transparent;
+  border-left-width: 6px;
+  border-radius: 4px;
+}
+
+.has-warning .input-feedback,
+.has-warning .textarea-feedback {
+  height: 55px;
+  margin-top: 2px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  border-color: rgba(255, 128, 0, 0.2);
+  color: #AA6633;
+  background-color: rgba(255, 128, 0, 0.2);
+}
+
+.has-warning > * {
+  border-color: rgba(255, 128, 0, 0.2);
+}
+
+.has-warning > div {
+  background-color: rgba(255, 128, 0, 0.2);
+}

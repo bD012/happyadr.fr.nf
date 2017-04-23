@@ -1,0 +1,63 @@
+<section id="backoffice">
+
+  <div class="flexContainer flexAround">
+
+    <!-- BACK OFFICE -->
+    <div class="flexItem flexS12">
+      <h1>{happy}adr - The Back-Office</h1>
+    </div>
+
+    <!-- INSEE -->
+    <div id="insee" class="flexItem flexPadding flexS11">
+
+      <div class="flexItem flexS11 flexPadding">
+        <h2>I.N.S.E.E - Copy files</h2>
+      </div>
+
+      <!-- UPDATE -->
+      <div id="backoffice-update-insee" class="flexItemContainer flexAround">
+
+        <div class="flexItem flexPadding flexS02">
+          <img src="<?= WEBROOT ?>/public/images/happyadr-insee.png" title="INSEE" alt="Files from INSEE.">
+        </div>
+
+        <button id="backoffice-insee-button-update-all" class="flexItem flexPadding flexS04 ajax" action="<?= WEBROOT ?>/backoffice/update-insee/all">
+          UPDATE ALL
+        </button>
+
+      </div>
+
+      <?= $insee ?>
+      
+    </div>
+
+    <!-- DATA BASE -->
+    <div id="database" class="flexItem flexPadding flexS11">
+
+      <div class="flexItem flexS11 flexPadding">
+        <h2>Data Base</h2>
+      </div>
+
+      <!-- DB UPDATE / DELETE ALL-->
+      <div id="backoffice-update-database" class="flexItemContainer flexAround">
+
+        <div class="flexItem flexPadding flexS02">
+          <img src="<?= WEBROOT ?>/public/images/happyadr-database.png" title="API Database" alt="API Database from INSEE.">
+        </div>
+
+        <button id="backoffice-database-button-update-all" class="flexItem flexPadding flexS04 ajax" action="<?= WEBROOT ?>/backoffice/update-database/all">
+          UPDATE ALL
+        </button>
+
+        <button id="backoffice-database-button-delete-all" class="flexItem flexPadding flexS04 ajax" action="<?= WEBROOT ?>/backoffice/delete-database/all">
+          DELETE ALL
+        </button>
+
+      <div id="backoffice_database">
+        <?= $database ?>
+      </div>
+      
+    </div>
+  </div>
+
+</section>

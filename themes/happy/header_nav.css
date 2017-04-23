@@ -1,0 +1,111 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 6px 24px #333333;
+}
+
+header .icon-menu {
+  color: rgba(0,0,0,0.4);
+  font-size: 40px;
+  line-height: 50px;
+}
+
+header .icon-menu:hover {
+  color: #333333;
+  text-shadow: 0px 0px 12px #FFBB88;
+}
+
+
+
+
+nav {
+  font-family: 'Abel', sans-serif;
+  font-size: 16px;
+  color: #FFEEEE;
+
+  background-color: #333333;
+  width: 100%;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  line-height: 22px;
+}
+
+nav div.flexItem {
+  transition: all 0.5s;
+}
+
+nav > div:hover {
+  cursor: pointer;
+  background-color: #AA6633;
+}
+
+nav div:hover a {
+  text-decoration: underline;
+}
+
+nav icon {
+  font-size: 16px;
+}
+
+.nav-user,
+.nav-dev {
+  color: #CCDDFF;
+}
+
+.nav-dev:hover,
+.nav-user:hover {
+  background: linear-gradient(to bottom, #CCDDFF, #333333);
+}
+
+#nav-hamburger {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 50px;
+  height: 50px;
+}
+
+#nav-hamburger:hover {
+  cursor: pointer;
+}
+
+#nav-switch {
+  display: none;
+}
+
+/**
+* media-queries
+*
+*/
+@media (min-width:1px) {
+  #nav_nav {
+    min-height: 0;
+    height: 0;
+  }
+
+  #nav-switch:checked ~ #nav_nav {
+    height: 100%;
+  }
+
+  #nav-hamburger {
+    display: initial;
+  }
+}
+
+@media (min-width:768px) {
+  #nav_nav {
+    height: 100%;
+    /*min-height: 50px;*/
+    /* height: 100% */
+  }
+
+  #nav-hamburger {
+    display: none;
+  }
+}

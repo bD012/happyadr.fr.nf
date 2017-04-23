@@ -1,0 +1,243 @@
+<section id="documentation">
+  <!-- Documentation -->
+  <div class="flexContainer flexAround">
+    <h1 class="flexItem flexS12">{happy}adr : API Documentation</h1>
+
+    <div class="flexItemContainer flexS10 flexPadding">
+      <!-- city -->
+      <h2 class="flexItem">api/city/</h2>
+
+      <h3 class="flexItem flexPadding">Request by {postcode}:</h3>
+      <p class="flexItem flexPadding">You can use following delimiters:</p>
+      <ul class="flexItemContainer flexS10 flexPadding">
+        <li class="flexItem flexPadding">'_' : Underscore delimiter which represent "space" and "specials" characters (" ", "'", "-").</li>
+        <li class="flexItem flexPadding">'|' : Pipe delimiter which represent the "OR" operator.</li>
+        <li class="flexItem flexPadding">'$' : Dollard delimiter which represent the "AND" operator.</li>
+      </ul>
+      <p class="flexItem flexPadding">You can call API by postcode (ex: 95000).</p>
+      <p class="flexItem flexPadding">{happy}adr will respond results that match your request limited to 12 results.</p>
+
+      <h3 class="flexItem flexPadding">API request:</h3>
+      <p class="flexItem flexPadding apiadress">http://www.happyadr.fr.nf/api/city/95000?token=******</p>
+
+      <h3 class="flexItem flexPadding">API response:</h3>
+      <pre class="flexItem flexPadding flexS10">
+{
+    "http_code": 200,
+    "username": "user",
+    "data-size": 4,
+    "data": [
+        {
+            "city": "Boisemont",
+            "postcode": "95000",
+            "department": "Val-d'Oise"
+        },
+        {
+            "city": "Cergy",
+            "postcode": "95000",
+            "department": "Val-d'Oise"
+        },
+        {
+            "city": "Neuville-sur-Oise",
+            "postcode": "95000",
+            "department": "Val-d'Oise"
+        },
+        {
+            "city": "Pontoise",
+            "postcode": "95000",
+            "department": "Val-d'Oise"
+        }
+    ]
+}
+      </pre>
+
+
+      <h3 class="flexItem flexPadding">Request by {city name}:</h3>
+      <p class="flexItem flexPadding">You can use following delimiters:</p>
+      <ul class="flexItemContainer flexS10 flexPadding">
+        <li class="flexItem flexPadding">'_' : Underscore delimiter which represent "space" and "specials" characters (" ", "'", "-").</li>
+        <li class="flexItem flexPadding">'|' : Pipe delimiter which represent the "OR" operator.</li>
+        <li class="flexItem flexPadding">'$' : Dollard delimiter which represent the "AND" operator.</li>
+      </ul>
+      <p class="flexItem flexPadding">You can call API by {city name} (ex: ouen).</p>
+      <p class="flexItem flexPadding">{happy}adr will respond results that match your request limited to 12 results.</p>
+
+      <h3 class="flexItem flexPadding">API request:</h3>
+      <p class="flexItem flexPadding apiadress">http://www.happyadr.fr.nf/api/city/ouen?token=******</p>
+
+      <h3 class="flexItem flexPadding">API response:</h3>
+      <pre class="flexItem flexPadding flexS10">
+{
+    "http_code": 200,
+    "username": "user",
+    "data-size": 5,
+    "data": [
+        {
+            "city": "Écouen",
+            "postcode": "95440",
+            "department": "Val-d'Oise"
+        },
+        {
+            "city": "Saint-Ouen-l'Aumône",
+            "postcode": "95310",
+            "department": "Val-d'Oise"
+        },
+        {
+            "city": "Saint-Ouen",
+            "postcode": "93400",
+            "department": "Seine-Saint-Denis"
+        },
+        {
+            "city": "Saint-Ouen-en-Brie",
+            "postcode": "77720",
+            "department": "Seine-et-Marne"
+        },
+        {
+            "city": "Saint-Ouen-sur-Morin",
+            "postcode": "77750",
+            "department": "Seine-et-Marne"
+        }
+    ]
+}
+      </pre>
+    </div>
+
+    <div class="flexItemContainer flexS10 flexPadding">
+      <!-- street -->
+      <h2 class="flexItem">happyadr/street/</h2>
+
+      <h3 class="flexItem flexPadding">Request by {street name}:</h3>
+      <p class="flexItem flexPadding">You can use following delimiters:</p>
+      <ul class="flexItemContainer flexS10 flexPadding">
+        <li class="flexItem flexPadding">'_' : Underscore delimiter which represent "space" and "specials" characters (" ", "'", "-").</li>
+        <li class="flexItem flexPadding">'|' : Pipe delimiter which represent the "OR" operator.</li>
+        <li class="flexItem flexPadding">'$' : Dollard delimiter which represent the "AND" operator.</li>
+      </ul>
+      <p class="flexItem flexPadding">You can call API by {street name} (ex: avenue$marronniers).</p>
+      <p class="flexItem flexPadding">{happy}adr will answer results that match your request limited to 12 results.</p>
+
+      <h3 class="flexItem flexPadding">API request:</h3>
+      <p class="flexItem flexPadding apiadress">http://www.happyadr.fr.nf/api/street/<wbr>avenue$marronniers?token=******</p>
+
+      <h3 class="flexItem flexPadding">API response:</h3>
+      <pre class="flexItem flexPadding flexS10">
+{
+    "http_code": 200,
+    "username": "user",
+    "data-size": 12,
+    "data": [
+        {
+            "street": "Avenue des Marronniers",
+            "city": "Soisy-sous-Montmorency",
+            "postcode": "95230",
+            "department": "Val-d'Oise"
+        },
+        {
+            "street": "Avenue des Marronniers",
+            "city": "Beauchamp",
+            "postcode": "95250",
+            "department": "Val-d'Oise"
+        },
+        {
+            "street": "Avenue des Marronniers",
+            "city": "Goussainville",
+            "postcode": "95190",
+            "department": "Val-d'Oise"
+        },
+        {
+            "street": "Avenue des Marronniers",
+            "city": "Montmorency",
+            "postcode": "95160",
+            "department": "Val-d'Oise"
+        },
+        {
+            "street": "Avenue des Marronniers",
+            "city": "Sarcelles",
+            "postcode": "95200",
+            "department": "Val-d'Oise"
+        },
+        {
+            "street": "Avenue des Marronniers",
+            "city": "Bonneuil-sur-Marne",
+            "postcode": "94380",
+            "department": "Val-de-Marne"
+        },
+        {
+            "street": "Avenue des Marronniers",
+            "city": "Choisy-le-Roi",
+            "postcode": "94600",
+            "department": "Val-de-Marne"
+        },
+        {
+            "street": "Avenue des Marronniers",
+            "city": "Fontenay-sous-Bois",
+            "postcode": "94120",
+            "department": "Val-de-Marne"
+        },
+        {
+            "street": "Avenue des Marronniers",
+            "city": "Nogent-sur-Marne",
+            "postcode": "94130",
+            "department": "Val-de-Marne"
+        },
+        {
+            "street": "Avenue des Marronniers",
+            "city": "Saint-Maur-des-Fossés",
+            "postcode": "94100",
+            "department": "Val-de-Marne"
+        },
+        {
+            "street": "Avenue des Marronniers",
+            "city": "Sucy-en-Brie",
+            "postcode": "94370",
+            "department": "Val-de-Marne"
+        },
+        {
+            "street": "Avenue des Marronniers",
+            "city": "Villeneuve-Saint-Georges",
+            "postcode": "94190",
+            "department": "Val-de-Marne"
+        }
+    ]
+}
+      </pre>
+    </div>
+
+    <div class="flexItemContainer flexS10 flexPadding">
+      <!-- address -->
+      <h2 class="flexItem">happyadr/address/</h2>
+
+      <h3 class="flexItem flexPadding">Request by {address}:</h3>
+      <p class="flexItem flexPadding">You can use following delimiters:</p>
+      <ul class="flexItemContainer flexS10 flexPadding">
+        <li class="flexItem flexPadding">'_' : Underscore delimiter which represent "space" and "specials" characters (" ", "'", "-").</li>
+        <li class="flexItem flexPadding">',' : Comma delimiter which represent the separator ("AND" operator).</li>
+      </ul>
+      <p class="flexItem flexPadding">You can call API by {address} (ex: rue,planchat,paris ).</p>
+      <p class="flexItem flexPadding">{happy}adr will respond results that match your request limited to 99 results.</p>
+
+      <h3 class="flexItem flexPadding">API request:</h3>
+      <p class="flexItem flexPadding apiadress">http://www.happyadr.fr.nf/api/address/<wbr>rue,planchat,paris?token=******</p>
+
+      <h3 class="flexItem flexPadding">API response:</h3>
+      <pre class="flexItem flexPadding flexS10">
+{
+    "http_code": 200,
+    "username": "user",
+    "data-size": 1,
+    "data": [
+        {
+            "search": "rue planchat",
+            "city": "20e Arrondissement",
+            "postcode": "75020",
+            "department": "Paris"
+        }
+    ]
+}
+      </pre>
+    </div>
+
+    <div class="flexZZ separator"></div>
+
+  </div>
+</section>

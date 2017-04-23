@@ -1,0 +1,75 @@
+/* **************************************************************************************
+**  FLEXBOX MEDIAQUERIES
+** *********************************************************************************** */
+
+/* ** Small
+************************************ */
+@media (min-width:1px) {
+.flexS12 { flex: 0 0 100%; }
+.flexS11 { flex: 0 0 91.666666%; }
+.flexS10 { flex: 0 0 83.333333%; }
+.flexS09 { flex: 0 0 75%; }
+.flexS08 { flex: 0 0 66.666666%; }
+.flexS07 { flex: 0 0 58.333333%; }
+.flexS06 { flex: 0 0 50%; }
+.flexS05 { flex: 0 0 41.666666%; }
+.flexS04 { flex: 0 0 33.333333%; }
+.flexS03 { flex: 0 0 25%; }
+.flexS02 { flex: 0 0 16.666666%; }
+.flexS01 { flex: 0 0 8.333333%; }
+	
+.flexSIC { flex: none; }
+.flexSIX { flex: 1 0 auto;}
+} /* @media SMALL */
+
+/* ** Medium
+************************************ */
+@media (min-width:768px) {
+.flexM12 { flex: 0 0 100%; }
+.flexM11 { flex: 0 0 91.666666%; }
+.flexM10 { flex: 0 0 83.333333%; }
+.flexM09 { flex: 0 0 75%; }
+.flexM08 { flex: 0 0 66.666666%; }
+.flexM07 { flex: 0 0 58.333333%; }
+.flexM06 { flex: 0 0 50%; }
+.flexM05 { flex: 0 0 41.666666%; }
+.flexM04 { flex: 0 0 33.333333%; }
+.flexM03 { flex: 0 0 25%; }
+.flexM02 { flex: 0 0 16.666666%; }
+.flexM01 { flex: 0 0 8.333333%; }
+	
+.flexMIC { flex: none; }
+.flexMIX { flex: 1 0 auto;}
+} /* @media MEDIUM */
+
+/* ** Large
+************************************ */
+@media (min-width:1200px) {
+.flexL12 { flex: 0 0 100%; }
+.flexL11 { flex: 0 0 91.666666%; }
+.flexL10 { flex: 0 0 83.333333%; }
+.flexL09 { flex: 0 0 75%; }
+.flexL08 { flex: 0 0 66.666666%; }
+.flexL07 { flex: 0 0 58.333333%; }
+.flexL06 { flex: 0 0 50%; }
+.flexL05 { flex: 0 0 41.666666%; }
+.flexL04 { flex: 0 0 33.333333%; }
+.flexL03 { flex: 0 0 25%; }
+.flexL02 { flex: 0 0 16.666666%; }
+.flexL01 { flex: 0 0 8.333333%; }
+	
+.flexLIC { flex: none; }
+.flexLIX { flex: 1 0 auto;}
+} /* @media LARGE */
+
+@media (min-width:1px) and (max-width:768px) { /* SMALL */
+.flexS00,.flexSM00,.flexSML00,.flexSM00,.flexSML00 { display: none; }
+} /* @media SMALL */
+
+@media (min-width:768px) and (max-width:1200px) { /* MEDIUM */
+.flexSM00,.flexSML00,.flexM00,.flexML00 { display: none; }
+} /* @media MEDIUM */
+
+@media (min-width:1200px) { /* LARGE */
+.flexSML00,.flexML00,.flexL00 { display: none; }
+} /* @media LARGE */
